@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Llamita Sport</title>
+</head>
+
+<body>
+  <!-- =======================================barra de navegación======================================= -->
+  <app-navbar [input]='count'></app-navbar>
+
+  <!--carrusel carrusel carrusel carrusel carrusel carrusel -->
+
+  <section id="carousel">
+    <div id="carousel-id" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-id" data-slide-to="1"></li>
+        <li data-target="#carousel-id" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="https://th.bing.com/th/id/OIP.L71w2aeGXB-bJdp4lwWpSwAAAA?rs=1&pid=ImgDetMain"
+            alt="Primera imagen">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Zapatillas Deportivas UltraBoost</h3>
+            <p>Zapatillas de alto rendimiento para correr y entrenar</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="https://th.bing.com/th/id/OIP.RWZt8kD6kH8M8kKk56uwOAHaFj?rs=1&pid=ImgDetMain"
+            alt="Segunda imagen">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Bicicleta de Montaña XTR</h3>
+            <p>Bicicleta resistente y ligera para todo terreno</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="https://gimnasioencasa.net/wp-content/uploads/2020/09/mejores-relojes-deportivos.jpg"
+            alt="Tercera imagen">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Reloj Deportivo Garmin</h3>
+            <p>Reloj con GPS y monitor de frecuencia cardíaca</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carousel-id" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-id" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </section>
+
+  <!--==================================================================ofertas nuevas==============================================================-->
+  <app-new></app-new>
+
+  <!--================================================================================================================================-->
+
+  <section class="p-0 m-0" id="adds">
+    <div class="container-fluid">
+      <div class="row no-gutter popup-gallery">
+        <div class="col-lg-4 col-sm-6 p-0 m-0">
+          <a class="adds-box" href="https://aerobox.com.uy/wp-content/uploads/2021/06/Hdaac922e3c5743758dcb8bc5fb41077ct-1024x1024.jpg">
+            <img class="img-fluid" src="https://aerobox.com.uy/wp-content/uploads/2021/06/Hdaac922e3c5743758dcb8bc5fb41077ct-1024x1024.jpg" alt="">
+            <div class="adds-box-caption">
+              <div class="adds-box-caption-content">
+                <div class="project-category text-faded">
+                  <h4>Nueva ropa deportiva para hombres y mujeres</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 p-0">
+          <a class="adds-box" href="https://gimnasioencasa.net/wp-content/uploads/2020/09/mejores-relojes-deportivos.jpg">
+            <img class="img-fluid" src="https://gimnasioencasa.net/wp-content/uploads/2020/09/mejores-relojes-deportivos.jpg"
+              alt="">
+            <div class="adds-box-caption">
+              <div class="adds-box-caption-content">
+                <div class="project-category text-faded">
+                  <h4>Nuevos relojes deportivos para hombres y mujeres</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 p-0">
+          <a class="adds-box" href="https://thumbs.dreamstime.com/z/valencia-espa%C3%B1a-de-octubre-colecci%C3%B3n-gorras-varias-marcas-deportivas-168196540.jpg">
+            <img class="img-fluid" src="https://thumbs.dreamstime.com/z/valencia-espa%C3%B1a-de-octubre-colecci%C3%B3n-gorras-varias-marcas-deportivas-168196540.jpg" alt="">
+            <div class="adds-box-caption">
+              <div class="adds-box-caption-content">
+                <div class="project-category text-faded">
+                  <h4>Gorras con diferentes diseños para hombres y mujeres</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--====================================================================== productos populares ==========================================================-->
+  <app-popular></app-popular>
+  <!--================================================== ofertas especiales ==============================================================================-->
+  <app-hot-deals></app-hot-deals>
+  <!--================================================= pie de página ===============================================================================-->
+  <app-footer></app-footer>
+</body>
+
+</html>

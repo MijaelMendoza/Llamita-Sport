@@ -1,0 +1,96 @@
+
+
+/*---------------------------------------------*/
+
+
+/*the first page of carosal*/
+
+#carousel img {
+  width: 100%;
+  height: 500px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  padding: 15px;
+}
+
+@media (max-width:1000px) {
+  #carousel img {
+    height: 100%;
+  }
+}
+
+
+/*---------------------------------------------*/
+
+
+/*the third page of adds display*/
+
+.adds-box {
+  position: relative;
+  display: block;
+  max-width: 550px;
+  margin: 0 auto
+}
+
+.adds-box .adds-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(1, 1, 1, .4);
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+.adds-box .adds-box-caption .adds-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center
+}
+
+.adds-box .adds-box-caption .adds-box-caption-content .project-category,
+.adds-box .adds-box-caption .adds-box-caption-content {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+}
+
+.adds-box .adds-box-caption .adds-box-caption-content .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase
+}
+
+.adds-box .adds-box-caption .adds-box-caption-content {
+  font-size: 18px
+}
+
+.adds-box:hover .adds-box-caption {
+  opacity: 1
+}
+
+.adds-box:focus {
+  outline: 0
+}
+
+#adds img {
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .adds-box .adds-box-caption .adds-box-caption-content .project-category {
+    font-size: 16px
+  }
+  .adds-box .adds-box-caption .adds-box-caption-content .project-name {
+    font-size: 22px
+  }
+}
+

@@ -1,0 +1,24 @@
+
+/*the footer*/
+
+footer {
+    background-color: #0b1628;
+    color: white;
+    padding-top: 30px;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+  }
+  
+  .footer-copyright {
+    background: #040b16;
+    padding: 10px;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+  }
+  

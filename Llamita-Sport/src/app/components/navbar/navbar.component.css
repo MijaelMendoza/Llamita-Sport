@@ -1,0 +1,114 @@
+/*the navbar at the top */
+
+.top-nav {
+  background-color: rgb(51, 123, 196);
+  font-size: 15px;
+}
+
+nav {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.top-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 10px 0;
+  margin: auto 0;
+}
+
+.top-nav>ul>li {
+  margin: 0 5px;
+}
+
+.top-nav>ul>li>a:hover {
+  color: #dae8ef;
+}
+
+.top-nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #2363a3;
+}
+
+#menu-bar {
+  background: white;
+}
+
+#navbar-content>ul>li>a {
+  color: white;
+}
+
+#navbar-content>ul>li>a:hover {
+  color: #dae8ef;
+}
+
+#navbar-content>.nav-link>.fa-shopping-cart {
+  color: white;
+}
+
+#navbar-content>.nav-link>.fa-shopping-cart:hover {
+  color: #dae8ef;
+}
+
+.navbar-brand>h1 {
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width:630px) {
+  .top-nav {
+    flex-direction: column;
+    padding: 0;
+  }
+  .top-nav ul {
+    padding: 0;
+  }
+  #top-nav-ul-1 {
+    justify-content: flex-start;
+  }
+  #top-nav-ul-2 {
+    justify-content: flex-end;
+  }
+}
+
+
+
+/* ================fixed================ */
+
+.fixed {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+}
+
+
+/* =====================account==================== */
+/*login and register*/
+
+.account input {
+  border: 2px solid rgb(63, 127, 191);
+  text-indent: 4px;
+}
+
+.account button {
+  background: rgb(38, 76, 114);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.account button:hover {
+  background: rgb(25, 51, 76);
+  padding-right: 25px;
+}
+
+.account p a {
+  text-decoration: none;
+  color: white;
+}
+
