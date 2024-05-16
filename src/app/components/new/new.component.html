@@ -1,0 +1,29 @@
+<!--================================================================================================================================-->
+<section id="first-card">
+  <h2 class="mt-0 pt-5 pb-2 text-center text-primary">Nuevos Productos</h2>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-3 col-sm-4 col-6 mt-4 mb-4" *ngFor="let item of productandcats">
+        <div [routerLink]="['/home', item._id]" class="card h-100">
+          <a>
+            <img class="card-img-top" [src]="item.image" alt="">
+          </a>
+          <div class="card-block text-center">
+            <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+            <h6 class="card-title">
+              <a href="#">{{item.product}}</a>
+              <!-- {{items}} -->
+            </h6>
+            <h6>{{item.shipping}}</h6>
+            <h6>${{item.price}}</h6>
+            <div class="d-flex justify-content-center pb-3 pt-2">
+              <button class="btn btn-primary btn-xs" type="button">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

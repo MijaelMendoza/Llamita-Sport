@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <h3>Agregar Pago</h3>
+  <div class="row">
+    <div class="col-sm-6 col-12">
+
+      <ul class="list-group" *ngFor="let payment of payments; let num = index">
+        <li class="list-group-item p-0 mb-2">
+          <div class="card w-100">
+            <h5 class="card-header">Pago {{num+1}}</h5>
+            <div class="card-block">
+              <p class="card-text"> {{payment.cardholder}} <br> {{payment.phone}}</p>
+              <p class="card-text">Terminacion de la tarjeta {{(payment.cardnumber).toString().slice(-4)}}</p>
+              <p class="card-text">Expira en {{payment.exdate}}</p>
+              <a href="">editar</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+    <div class="col-sm-6 col-12">
+      <div class="row">
+        <div class="col-12">
+          <form>
+            <div class="h-25">
+              <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-cc-paypal fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="form-group">
+              <small>Seleccionar metodo de pago</small>
+              <select class="form-control" id="exampleSelect1">
+                <option>Visa</option>
+                <option>PayPal</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input  type="number" class="form-control" aria-describedby="card number" placeholder="Card Number">
+            </div>
+
+            <div class="form-group">
+              <input  type="month" class="form-control" aria-describedby="expiration date" placeholder="Expiration Date">
+            </div>
+            <div class="form-group">
+              <input  type="text" class="form-control" aria-describedby="card holder name" placeholder="Card Holder">
+            </div>
+            <div class="form-group">
+              <input  type="tel" class="form-control" aria-describedby="phone number" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+              <input  type="number" class="form-control" aria-describedby="security #" placeholder="Security #">
+            </div>
+            <button type="submit" class="btn btn-primary" disabled>Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

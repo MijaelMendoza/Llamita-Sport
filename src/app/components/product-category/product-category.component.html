@@ -1,0 +1,48 @@
+<section id="contactPage">
+  <div class="container-fluid m-0 p-0">
+    <div class="row justify-content-center">
+      <div class="col-sm-10">
+
+        <form [formGroup]='form' (submit)="submitForm()">
+          <div class="form-group">
+            <input formControlName="category" type="text" (ngModelChange)="categoryChange($event)" class="form-control" aria-describedby="New category"
+              placeholder="Create new category">
+          </div>
+          <div class="form-group">
+            <small class="mute">Seleccionar categoria</small>
+            <select formControlName="selectcategory" (ngModelChange)="selectcategoryChange($event)" class="form-control">
+              <option></option>
+              <option *ngFor="let category of categories">
+                {{category.category}}
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input formControlName="product" type="text" class="form-control" aria-describedby="product" placeholder="Product name">
+          </div>
+          <div class="form-group">
+            <input formControlName="price" type="number" class="form-control" aria-describedby="product price" placeholder="Product price">
+          </div>
+          <div class="form-group">
+            <input formControlName="formerprice" type="number" class="form-control" aria-describedby="product former price" placeholder="Former price (optional)">
+          </div>
+          <div class="form-group">
+            <input formControlName="quantity" type="number" class="form-control" aria-describedby="Product quantity" placeholder="Product quantity">
+          </div>
+          <div class="form-group">
+            <textarea formControlName="info" class="form-control" placeholder="Product info" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <input formControlName="shipping" type="text" class="form-control" aria-describedby="product shipping" placeholder="Shipping option">
+          </div>
+          <div class="form-group">
+            <input formControlName="image" type="text" class="form-control" placeholder="image url or hosted url" aria-describedby="image url or hosted address">
+          </div>
+
+          <button [disabled]='!form.valid' type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
