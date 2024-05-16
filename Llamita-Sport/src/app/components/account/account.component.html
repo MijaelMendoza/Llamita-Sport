@@ -1,0 +1,29 @@
+<div class="container-fluid pt-3">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="list-group mb-2">
+        <div class="card border-bottom-0">
+          <div class="card-block text-center">
+            <h5>Configuracion de la cuenta</h5>
+          </div>
+        </div>
+        <a [routerLink]="['profile']" routerLinkActive="active" class="list-group-item list-group-item-action">Perfil
+        </a>
+        <a [routerLink]="['admin']" routerLinkActive="active" class="list-group-item list-group-item-action">Admin
+        </a>
+
+        <a [routerLink]="['address']" routerLinkActive="active" class="list-group-item list-group-item-action">Direccion
+        </a>
+        <a [routerLink]="['payment']" routerLinkActive="active" class="list-group-item list-group-item-action">Pago
+        </a>
+
+      </div>
+      <div class="block">
+        <a class="btn-link pl-3" [routerLink]="['']" role="button">Inicio</a>
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
