@@ -1,0 +1,34 @@
+{
+  "name": "e-comerce-app",
+  "version": "1.0.0",
+  "description": "ecomerse application",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "build": "cd _ecomerce && ng build --prod && cd .. && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyoeldefare/e-comerce-app.git"
+  },
+  "keywords": [
+    "node",
+    "angular",
+    "MEAN",
+    "stack"
+  ],
+  "author": "eyoel defare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyoeldefare/e-comerce-app/issues"
+  },
+  "homepage": "https://github.com/eyoeldefare/e-comerce-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bson": "^1.1.6",
+    "cors": "^2.8.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.16.2",
+    "mongoose": "^5.13.13"
+  }
+}
